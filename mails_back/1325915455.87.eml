@@ -1,0 +1,92 @@
+Return-Path: <mike.bison42@googlemail.com>
+Delivered-To: newagora@mailintern.atari-frosch.de
+Received: from mail-ee0-f50.google.com (mail-ee0-f50.google.com [74.125.83.50])
+	by seewind.atari-frosch.de (Postfix) with ESMTPS id CE2D825344
+	for <newagora@atari-frosch.de>; Sat,  7 Jan 2012 01:27:18 +0100 (CET)
+Received: by eeke53 with SMTP id e53so1344245eek.9
+        for <newagora@atari-frosch.de>; Fri, 06 Jan 2012 16:27:18 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlemail.com; s=gamma;
+        h=message-id:date:from:user-agent:mime-version:to:subject
+         :content-type;
+        bh=6ZFG1A1t9xSC92cGgaYb98GIyeQRgUBQa5Ihq2VttXI=;
+        b=ScoardFY2kDtBowRW9gIPeKLu6azowZe7vgnbJQFo8jPWoWseTaYOGqjEhHOZmzaKA
+         8w3y70/mUVL1Yui9fND8AApQRPV+kanitqa3HVIGOioRvvxutFQIc+CAQbLJSKtRiZDv
+         /NPUIEmQgICaHwgq4KorrnezNc196rdpgHhVE=
+Received: by 10.213.36.6 with SMTP id r6mr1549232ebd.74.1325896038451;
+        Fri, 06 Jan 2012 16:27:18 -0800 (PST)
+Received: from [172.22.26.172] (ip-95-223-46-176.unitymediagroup.de. [95.223.46.176])
+        by mx.google.com with ESMTPS id e12sm103863099eea.5.2012.01.06.16.27.17
+        (version=SSLv3 cipher=OTHER);
+        Fri, 06 Jan 2012 16:27:18 -0800 (PST)
+Message-ID: <4F079158.80301@googlemail.com>
+Date: Sat, 07 Jan 2012 01:27:04 +0100
+From: Mike Bison <mike.bison42@googlemail.com>
+User-Agent: Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.16) Gecko/20111110 Iceowl/1.0b1 Icedove/3.0.11
+MIME-Version: 1.0
+To: newagora@atari-frosch.de
+Subject: request
+Content-Type: multipart/alternative;
+ boundary="------------020800030800050304030307"
+
+This is a multi-part message in MIME format.
+--------------020800030800050304030307
+Content-Type: text/plain; charset=ISO-8859-15; format=flowed
+Content-Transfer-Encoding: 7bit
+
+
+
+-------- Original-Nachricht --------
+Betreff: 	request
+Datum: 	Sat, 07 Jan 2012 01:25:22 +0100
+Von: 	Mike Bison <mike.bison42@googlemail.com>
+An: 	newagora@atari-frosch.de
+
+
+
+http://blog.fefe.de
+
+
+--------------020800030800050304030307
+Content-Type: text/html; charset=ISO-8859-15
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-15">
+</head>
+<body text="#000000" bgcolor="#ffffff">
+<br>
+<br>
+-------- Original-Nachricht --------
+<table class="moz-email-headers-table" cellpadding="0" cellspacing="0"
+ border="0">
+  <tbody>
+    <tr>
+      <th valign="BASELINE" nowrap="nowrap" align="RIGHT">Betreff: </th>
+      <td>request</td>
+    </tr>
+    <tr>
+      <th valign="BASELINE" nowrap="nowrap" align="RIGHT">Datum: </th>
+      <td>Sat, 07 Jan 2012 01:25:22 +0100</td>
+    </tr>
+    <tr>
+      <th valign="BASELINE" nowrap="nowrap" align="RIGHT">Von: </th>
+      <td>Mike Bison <a class="moz-txt-link-rfc2396E" href="mailto:mike.bison42@googlemail.com">&lt;mike.bison42@googlemail.com&gt;</a></td>
+    </tr>
+    <tr>
+      <th valign="BASELINE" nowrap="nowrap" align="RIGHT">An: </th>
+      <td><a class="moz-txt-link-abbreviated" href="mailto:newagora@atari-frosch.de">newagora@atari-frosch.de</a></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<pre><a class="moz-txt-link-freetext" href="http://blog.fefe.de">http://blog.fefe.de</a>
+</pre>
+</body>
+</html>
+
+--------------020800030800050304030307--

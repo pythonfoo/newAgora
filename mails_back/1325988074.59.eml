@@ -1,0 +1,93 @@
+Return-Path: <frosch@bilkinfo.de>
+Delivered-To: newagora@mailintern.atari-frosch.de
+Received: from mail.dasr.de (mail.dasr.de [217.69.77.164])
+	by seewind.atari-frosch.de (Postfix) with ESMTPS id 048C525344
+	for <newagora@atari-frosch.de>; Sat,  7 Jan 2012 15:21:19 +0100 (CET)
+Received: from p57bd978e.dip.t-dialin.net ([87.189.151.142] helo=[192.168.1.100])
+	by mail.dasr.de with esmtpsa (TLS1.0:RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.69)
+	(envelope-from <frosch@bilkinfo.de>)
+	id 1RjX94-0002rM-4Y
+	for newagora@atari-frosch.de; Sat, 07 Jan 2012 14:21:18 +0000
+Message-ID: <4F0854C8.5090006@bilkinfo.de>
+Date: Sat, 07 Jan 2012 15:20:56 +0100
+From: Sabine Engelhardt <frosch@bilkinfo.de>
+User-Agent: Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.16) Gecko/20111110 Icedove/3.0.11
+MIME-Version: 1.0
+To: newagora@atari-frosch.de
+Subject: REGISTER
+X-Enigmail-Version: 1.0.1
+Content-Type: multipart/signed; micalg=pgp-sha1;
+ protocol="application/pgp-signature";
+ boundary="------------enig2519286FA01E119D690E8AD3"
+
+This is an OpenPGP/MIME signed message (RFC 2440 and 3156)
+--------------enig2519286FA01E119D690E8AD3
+Content-Type: multipart/mixed;
+ boundary="------------000401080406070602050701"
+
+This is a multi-part message in MIME format.
+--------------000401080406070602050701
+Content-Type: text/plain; charset=ISO-8859-15
+Content-Transfer-Encoding: quoted-printable
+
+
+--=20
+http://www.atari-frosch.de/ | http://blog.atari-frosch.de/
+PGP encryption welcome! Key-ID: 0xCC0AEF3E @ usual places.
+Und au=DFerdem bin ich der Meinung, da=DF Deutschland kein Rechtsstaat is=
+t.
+
+--------------000401080406070602050701
+Content-Type: application/pgp-keys;
+ name="0xCC0AEF3E.asc"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: attachment;
+ filename="0xCC0AEF3E.asc"
+
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+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
