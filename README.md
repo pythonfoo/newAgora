@@ -25,7 +25,7 @@ Write as subject one of these commands:
 * **request**
   - write the pages you wanna recieve in the mail body, LINE BY LINE
 * **register**
-  - not fully functionoal, in the 'near' future, you can create an account with that ;)
+  - not fully functional, in the 'near' future, you can create an account with it ;)
 
 ## CREDITS
 * fork us at GitHub: https://github.com/pythonfoo/newAgora
