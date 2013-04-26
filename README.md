@@ -28,6 +28,6 @@ Write as subject one of these commands:
   - not fully functionoal, in the 'near' future, you can create an account with that ;)
 
 ## CREDITS
-* fork us at GitHub: https://github.com/chaosdorf/pythonfoo/tree/master/projekts/newagora
+* fork us at GitHub: https://github.com/pythonfoo/newAgora
 * idea by: Atari-Frosch: http://blog.atari-frosch.de/2011/07/22/new-agora/
 * pirate pad for informations and discusions: http://piratenpad.de/hU3OW9nNjl
