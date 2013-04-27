@@ -5,7 +5,6 @@ import processing
 import time
 import configLoader
 
-
 while True:
 	print('###### ' + time.strftime("%d.%m.%y %H:%M:%S") + ' ######')
 	nAgora = processing.newAgora()

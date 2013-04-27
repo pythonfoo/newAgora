@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import smtplib
 import random
 import time

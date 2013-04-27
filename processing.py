@@ -1,12 +1,14 @@
 #!/usr/bin/python
 
 import sendMail
-import urllib2, re, os, shutil
+import urllib2
+import re
+import os
+import shutil
+import configLoader
 
 class newAgora(object):
 	def __init__(self):
-		import configLoader
-		
 		self.pSend = sendMail.pageSender()
 	
 		self.pageDir = configLoader.conf.getValue('pageDir') #"pages/"
@@ -56,8 +58,6 @@ class newAgora(object):
 	def getMailFileLines(self, filename):
 		pT = open(self.mailDir + filename, 'r')
 		lines = pT.readlines()
-		#print lines
-		#x = raw_input('pauseX')
 		pT.close()
 		return lines
 		
@@ -71,6 +71,7 @@ class newAgora(object):
 				os.remove(self.mailDir + mailFileName)
 
 	def getContent(self, link):
+		#TODO: own module with cache and stuff!
 		content = ''
 		try:
 			request = urllib2.Request(link)

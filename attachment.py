@@ -1,5 +1,7 @@
 #!/usr/bin/python
+
 import email
+
 msg = email.message_from_file(open('mails_back/1325988074.59.eml'))
 print len(msg.get_payload())
 attachment = msg.get_payload()[0]

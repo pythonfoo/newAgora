@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import os
 
 class configLoader(object):
@@ -22,7 +24,7 @@ class configLoader(object):
 		for lineRaw in lines:
 			line = lineRaw.strip()
 			
-			if line != '' and line.find('#') != 0:
+			if '=' in line and line.find('#') != 0:
 				tmpSplit = line.split('=')
 				
 				key = tmpSplit[0].strip()
@@ -32,7 +34,6 @@ class configLoader(object):
 				
 				if valTmp.lower() in self.boolStrings:
 					val = self.str2bool(valTmp)
-					print key,valTmp,valTmp.title(),val
 				elif '.' in valTmp and valTmp.replace('.', '').isdigit():
 					val = float(valTmp)
 				elif valTmp.isdigit() == True:

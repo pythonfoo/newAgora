@@ -1,11 +1,13 @@
 #!/usr/bin/python
 
-import sys, poplib, re
+import poplib
+import sys
+import re
 import time
+import configLoader
 
 class mailMon(object):
 	def __init__(self):
-		import configLoader
 		self.popServer = configLoader.conf.getValue('popServer')
 		self.popUser = configLoader.conf.getValue('popUser')
 		self.popPass = configLoader.conf.getValue('popPass')
@@ -53,9 +55,9 @@ class mailMon(object):
 		if True == True:
 			# connect to POP3 and identify user
 			if self.pop3Ssl == True:
-				pop = poplib.POP3_SSL( self.popServer)
+				pop = poplib.POP3_SSL(self.popServer)
 			else:
-				pop = poplib.POP3( self.popServer)
+				pop = poplib.POP3(self.popServer)
 			
 			pop.user(self.popUser)
 
