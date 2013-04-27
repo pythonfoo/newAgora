@@ -12,8 +12,10 @@ class configLoader(object):
 		
 		lines = pT.readlines()
 		pT.close()
-		self.configDic = {}
 		
+		self.boolStrings = ("true", "false", "yes", "no")
+		self.configDic = {}
+				
 		for lineRaw in lines:
 			line = lineRaw.strip()
 			
@@ -25,8 +27,9 @@ class configLoader(object):
 				
 				val = None
 				
-				if valTmp.lower() == 'true' or valTmp.lower() == 'false':
-					val = bool(valTmp)
+				if valTmp.lower() in self.boolStrings:
+					val = self.str2bool(valTmp)
+					print key,valTmp,valTmp.title(),val
 				elif '.' in valTmp and valTmp.replace('.', '').isdigit():
 					val = float(valTmp)
 				elif valTmp.isdigit() == True:
@@ -35,30 +38,32 @@ class configLoader(object):
 					val = valTmp
 				
 				self.configDic[key] = val
-				#print(self.configDic)
+	
+	def str2bool(self, trueStr):
+		return trueStr.lower() in ("true", "yes", "t", "1")
 				
 	def getValue(self, key, default=''):
-		# OLD method!
-		#if self.configDic.has_key(key) == False:
 		if not key in self.configDic:
 			print ('NONE!')
 			return default
 		else:
 			return self.configDic[key]
 
-		
+
+# initialize itself for instand availability after import
 conf = configLoader()
 
-# Make it optional to save the passwords in PLAINTEXT in the config file
+# make it optional to save the passwords in PLAINTEXT in the config file
 if conf.getValue("askForPop3Pw", False):
 	import getpass
-	conf.configDic['popPass'] = getpass.getpass("Password for SMTP: ")
+	conf.configDic['popPass'] = getpass.getpass("Password for POP3: ")
 	
 if conf.getValue("askForSmtpPw", False):
 	import getpass
 	conf.configDic['smtpPass'] = getpass.getpass("Password for SMTP: ")
 
-			
+
+# test if your config is ok
 if __name__ == "__main__":
 	print( conf.configDic )
 	print( conf.getValue("maxLines", 23) )
