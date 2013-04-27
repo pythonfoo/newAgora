@@ -24,7 +24,7 @@ class configLoader(object):
 				
 				val = None
 				
-				if valTmp == 'True' or valTmp == 'False':
+				if valTmp.lower() == 'true' or valTmp.lower() == 'false':
 					val = bool(valTmp)
 				elif '.' in valTmp and valTmp.replace('.', '').isdigit():
 					val = float(valTmp)
