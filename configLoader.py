@@ -2,6 +2,12 @@ import os
 
 class configLoader(object):
 	def __init__(self):
+		self.boolStrings = ("true", "false", "yes", "no")
+		self.configDic = {}
+		
+		self.loadConfig()
+
+	def loadConfig(self):
 		pT = None
 		
 		# conf.local for developers ;)
@@ -13,9 +19,6 @@ class configLoader(object):
 		lines = pT.readlines()
 		pT.close()
 		
-		self.boolStrings = ("true", "false", "yes", "no")
-		self.configDic = {}
-				
 		for lineRaw in lines:
 			line = lineRaw.strip()
 			
