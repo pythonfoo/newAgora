@@ -1,6 +1,5 @@
 #!/usr/bin/python
 
-# getpass,
 import sys, poplib, re
 import time
 
@@ -59,10 +58,6 @@ class mailMon(object):
 				pop = poplib.POP3( self.popServer)
 			
 			pop.user(self.popUser)
-
-			#if not POPPASS or POPPASS=='=':
-			#	# if no password was supplied, ask for it
-			#	POPPASS = getpass.getpass("Password for %s@%s:" % (POPUSER, POPHOST))
 
 			# authenticate user
 			pop.pass_(self.popPass)

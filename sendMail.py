@@ -10,7 +10,7 @@ class pageSender(object):
 		#http://docs.python.org/library/smtplib.html
 		self.smtpServer = configLoader.conf.getValue('smtpServer') 
 		self.smtpUser = configLoader.conf.getValue('smtpUser')
-		self.smtpPassword = configLoader.conf.getValue('smtpPassword')
+		self.smtpPassword = configLoader.conf.getValue('smtpPass')
 		self.smtpSender = configLoader.conf.getValue('smtpSender')
 		self.smtpTls = configLoader.conf.getValue('smtpTls') # True
 		self.smtpAuth = configLoader.conf.getValue('smtpAuth') # True
