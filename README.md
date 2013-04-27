@@ -33,7 +33,7 @@ How to run
 ----------
 1. You will need some sort of mail account that supports POP3.
 2. Change the **newagora.conf** according to your needs.
-3. Make shure you are in the newAgora directory, then you can run it with:
+3. Make shure you are in the newAgora directory, then you can run it with:  
         python newagorad.py
 
 
