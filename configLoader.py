@@ -1,4 +1,5 @@
 import os
+
 class configLoader(object):
 	def __init__(self):
 		pT = None
@@ -48,7 +49,18 @@ class configLoader(object):
 		
 conf = configLoader()
 
+# Make it optional to save the passwords in PLAINTEXT in the config file
+if conf.getValue("askForPop3Pw", False):
+	import getpass
+	conf.configDic['popPass'] = getpass.getpass("Password for SMTP: ")
+	
+if conf.getValue("askForSmtpPw", False):
+	import getpass
+	conf.configDic['smtpPass'] = getpass.getpass("Password for SMTP: ")
+
+			
 if __name__ == "__main__":
-	print conf.configDic
-	print conf.getValue("nf", "nf")
+	print( conf.configDic )
+	print( conf.getValue("maxLines", 23) )
+	print( conf.getValue("nf", "nf") )
 	
