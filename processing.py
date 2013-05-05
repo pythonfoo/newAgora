@@ -6,10 +6,12 @@ import re
 import os
 import shutil
 import configLoader
+from modules.pageLoader import pageLoader
 
 class newAgora(object):
 	def __init__(self):
-		self.pSend = sendMail.pageSender()
+		self._pSend = sendMail.pageSender()
+		self._pLoader = pageLoader()
 	
 		self.pageDir = configLoader.conf.getValue('pageDir') #"pages/"
 		self.mailDir = configLoader.conf.getValue('mailDir') #"mails/"
@@ -71,17 +73,8 @@ class newAgora(object):
 				os.remove(self.mailDir + mailFileName)
 
 	def getContent(self, link):
-		#TODO: own module with cache and stuff!
-		content = ''
-		try:
-			request = urllib2.Request(link)
-			request.add_header('User-agent',  'newagora '+ self.version)
-			response = urllib2.urlopen(request)
-			content = response.read()
-		except Exception, ex:
-			print("Write Error 4 getContent: " + link + '|' + str(ex))
-	
-		return content
+		# own module with cache and stuff!
+		return self._pLoader.getContent(link)
 	
 	def processHelp(self, userMailAddress):
 		content = 'Hello '+ userMailAddress +'\n'
@@ -177,13 +170,20 @@ class newAgora(object):
 			
 		if doSend == True:
 			for content in contents:
-				#sendOk = self.pSend.send(sender, '\n<hr>\n'.join(contents) )
-				sendOk = self.pSend.send(sender, content)
+				#sendOk = self._pSend.send(sender, '\n<hr>\n'.join(contents) )
+				sendOk = self._pSend.send(sender, content)
 				
 		if hasCommand == False or (doSend == True and sendOk == True):
 			self.removeMail(mailFile)
 
 
 if __name__ == "__main__":
+	# process a single mail file (with multiple contents)
+	# WITHOUT loading it (only files that already exist in the "mails" folder!
+	
+	import time
+	startTime = time.time()
 	na = newAgora()
 	na.process()
+	print("duration: " + str(time.time() - startTime) )
+
